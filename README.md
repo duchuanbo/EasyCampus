@@ -1,6 +1,32 @@
 # EasyCampus - 智能签到助手
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/duchuanbo/EasyCampus/releases/tag/v1.0.0)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Android-brightgreen.svg)](https://www.android.com/)
+
 一款支持多平台的安卓签到管理应用，帮助大学生轻松管理课堂签到。
+
+## 📱 版本说明
+
+### v1.0.0 - UI界面实现 ✅
+
+**发布日期**: 2026-03-14
+
+**已实现功能**:
+- ✅ 基础架构搭建 (MVVM + Clean Architecture)
+- ✅ 首页UI界面 (签到列表、今日课程)
+- ✅ 登录界面 (多平台账号管理)
+- ✅ 课表界面 (课程展示)
+- ✅ 设置界面 (应用配置)
+- ✅ Hilt依赖注入框架
+- ✅ Room数据库配置
+- ✅ 多平台适配器框架
+- ✅ Material Design 3 设计
+
+**待实现功能**:
+- ⏳ 各平台API实际对接
+- ⏳ 自动签到功能
+- ⏳ 通知推送
 
 ## 功能特性
 
