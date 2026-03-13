@@ -2,8 +2,12 @@ package com.easycampus.di
 
 import android.content.Context
 import androidx.room.Room
+import com.easycampus.data.local.TokenManager
 import com.easycampus.data.local.database.EasyCampusDatabase
 import com.easycampus.data.local.datastore.SettingsDataStore
+import com.easycampus.data.remote.guet.GuetAuthService
+import com.easycampus.data.remote.guet.GuetCheckInService
+import com.easycampus.data.remote.guet.GuetCourseService
 import com.easycampus.data.repository.*
 import com.easycampus.domain.repository.*
 import dagger.Module
@@ -60,5 +64,47 @@ object AppModule {
     @Singleton
     fun provideCheckInRepository(database: EasyCampusDatabase): CheckInRepository {
         return CheckInRepositoryImpl(database.checkInDao())
+    }
+
+    // ==================== GUET Services ====================
+
+    @Provides
+    @Singleton
+    fun provideGuetAuthService(): GuetAuthService {
+        return GuetAuthService()
+    }
+
+    @Provides
+    @Singleton
+    fun provideGuetCourseService(): GuetCourseService {
+        return GuetCourseService()
+    }
+
+    @Provides
+    @Singleton
+    fun provideGuetCheckInService(@ApplicationContext context: Context): GuetCheckInService {
+        return GuetCheckInService(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideTokenManager(@ApplicationContext context: Context): TokenManager {
+        return TokenManager(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideGuetRepository(
+        authService: GuetAuthService,
+        courseService: GuetCourseService,
+        checkInService: GuetCheckInService,
+        tokenManager: TokenManager
+    ): GuetRepositoryImpl {
+        return GuetRepositoryImpl(
+            authService,
+            courseService,
+            checkInService,
+            tokenManager
+        )
     }
 }
