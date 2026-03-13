@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">EasyCampus</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_schedule">课表</string>
+    <string name="nav_checkin">签到</string>
+    <string name="nav_settings">设置</string>
+    
+    <!-- Home -->
+    <string name="today_courses">今日课程</string>
+    <string name="pending_checkins">待签到</string>
+    <string name="no_pending_checkins">暂无待签到</string>
+    <string name="all_checkins_completed">所有签到已完成</string>
+    <string name="check_in">签到</string>
+    <string name="next_course">下一节: %1$s @ %2$s</string>
+    
+    <!-- Schedule -->
+    <string name="schedule_title">课程表</string>
+    <string name="week_format">第 %1$d 周 / 共 %2$d 周</string>
+    <string name="no_courses">暂无课程</string>
+    <string name="add_course_hint">点击右上角 + 添加课程</string>
+    
+    <!-- Login -->
+    <string name="add_account">添加账号</string>
+    <string name="select_platform">选择平台</string>
+    <string name="login_info">登录信息</string>
+    <string name="username">用户名/学号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="show_password">显示密码</string>
+    <string name="hide_password">隐藏密码</string>
+    <string name="security_note">您的登录信息将被加密存储在本地</string>
+    
+    <!-- Platforms -->
+    <string name="platform_ketangpai">课堂派</string>
+    <string name="platform_yuketang">雨课堂</string>
+    <string name="platform_changjiang">长江雨课堂</string>
+    <string name="platform_changke">畅课</string>
+    
+    <!-- Check-in Types -->
+    <string name="checkin_normal">普通签到</string>
+    <string name="checkin_gesture">手势签到</string>
+    <string name="checkin_location">位置签到</string>
+    <string name="checkin_qr">二维码签到</string>
+    <string name="checkin_code">签到码</string>
+    <string name="checkin_face">人脸识别</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="appearance">外观</string>
+    <string name="dynamic_theme">动态主题</string>
+    <string name="dynamic_theme_desc">跟随系统壁纸颜色</string>
+    <string name="theme_mode">主题模式</string>
+    <string name="notifications">通知</string>
+    <string name="enable_notifications">启用通知</string>
+    <string name="enable_notifications_desc">接收签到和课程提醒</string>
+    <string name="checkin_reminder">签到提醒</string>
+    <string name="course_reminder">课程提醒</string>
+    <string name="check_in_settings">签到</string>
+    <string name="auto_checkin">自动签到</string>
+    <string name="auto_checkin_desc">检测到签到时自动执行</string>
+    <string name="auto_checkin_types">自动签到类型</string>
+    <string name="accounts">账号</string>
+    <string name="manage_accounts">管理账号</string>
+    <string name="about">关于</string>
+    <string name="version">版本</string>
+    <string name="open_source_licenses">开源许可</string>
+    <string name="danger_zone">危险区域</string>
+    <string name="clear_all_data">清除所有数据</string>
+    <string name="clear_all_data_desc">删除所有本地存储的数据</string>
+    
+    <!-- Theme Modes -->
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_system">跟随系统</string>
+    
+    <!-- Common -->
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="add">添加</string>
+    <string name="refresh">刷新</string>
+    <string name="loading">加载中…</string>
+    <string name="error">错误</string>
+    <string name="success">成功</string>
+    <string name="retry">重试</string>
+</resources>

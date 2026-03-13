@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.EasyCampus" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.EasyCampus.Splash" parent="Theme.EasyCampus">
+        <item name="android:windowBackground">@drawable/ic_launcher_background</item>
+    </style>
+</resources>
